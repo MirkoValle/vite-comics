@@ -4,9 +4,9 @@ import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
   export default{
     components:{
-      Header,
-      Main,
-      Footer,
+      AppHeader,
+      AppMain,
+      AppFooter,
     }
   }
 </script>
@@ -18,5 +18,6 @@ import AppFooter from "./components/AppFooter.vue";
 </template>
 
 <style lang="scss">
-@use "./styles/general.scss";
+@use './styles/general.scss';
+@use './styles/partials/variables' as *
 </style>

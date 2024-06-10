@@ -92,17 +92,19 @@ export default{
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 20rem;
+    @include container;
     img{
         width: 5rem;
     }
     ul{
         display: flex;
+        margin: 0;
         li{
             cursor: pointer;
                 padding: 3rem 0;

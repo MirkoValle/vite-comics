@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+
   export default{
     components:{
       AppHeader,
@@ -14,10 +15,11 @@ import AppFooter from "./components/AppFooter.vue";
 <template>
     <AppHeader/>
     <AppMain/>
+
     <AppFooter/>
 </template>
 
 <style lang="scss">
 @use './styles/general.scss';
-@use './styles/partials/variables' as *
+@use './styles/partials/variables' as *;
 </style>

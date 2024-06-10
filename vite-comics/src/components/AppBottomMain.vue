@@ -1,10 +1,5 @@
 <script>
-import AppBottomMain from "./AppBottomMain.vue";
-
 export default{
-    components:{
-    AppBottomMain,
-},
     data() {
         return{
             
@@ -14,12 +9,11 @@ export default{
 </script>
 
 <template>
-<div class="container">
-    <section>
-        <h1> --> Content goes here <-- </h1>
-    </section>
-</div>
-<AppBottomMain/>
+    <div>
+        <section>
+            
+        </section>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -27,17 +21,11 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 
-
 div{
-    background-color: $dark;
+    background-color: $blue-color;
     padding: 3rem;
     section{
         @include container;
-        h1{
-        color: white;
-        margin: 0;
     } 
-    }
 }
-
 </style>

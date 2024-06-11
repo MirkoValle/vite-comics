@@ -9,9 +9,9 @@ export default{
 </script>
 
 <template>
-    <div>
+    <div class="container">
         <section>
-            
+            <h1>prova</h1>
         </section>
     </div>
 </template>
@@ -21,11 +21,14 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 
-div{
+.container{
     background-color: $blue-color;
     padding: 3rem;
     section{
         @include container;
+        h1{
+            color: white;
+        }
     } 
 }
 </style>

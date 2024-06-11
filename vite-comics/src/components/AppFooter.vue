@@ -189,6 +189,9 @@ div.container{
                 }
             }   
         }
+        img{
+            transform: translateY(-8rem);
+        }
     }
 }
 

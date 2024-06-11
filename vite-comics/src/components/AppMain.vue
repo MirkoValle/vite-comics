@@ -14,6 +14,9 @@ export default{
 </script>
 
 <template>
+    <div class="jumbo">
+        
+    </div>
 <div class="container">
     <section>
         <h1> --> Content goes here <-- </h1>
@@ -27,7 +30,10 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 
-
+div.jumbo{
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 19rem;
+}
 div{
     background-color: $dark;
     padding: 3rem;

@@ -107,18 +107,21 @@ section{
         margin: 0;
         li{
             cursor: pointer;
-                padding: 3rem 0;
-                margin: 0 1rem;
-                text-transform: uppercase;
-                font-size: .8rem;
-                font-weight: 600;
-                color: $dark-grey-color;
-                border-bottom: .5rem solid transparent;
+            padding: 3rem 0;
+            margin: 0 1rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: 600;
+            color: $dark-grey-color;
+            border-bottom: .5rem solid transparent;
 
                 &.active{
                             border-bottom: .5rem solid $blue-color;
                             color: $blue-color;
                         }
+                &:hover{
+                    color: $blue-color;
+                }
         }
     }
 }

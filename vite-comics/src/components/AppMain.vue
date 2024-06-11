@@ -98,6 +98,7 @@ export default{
         <div class="comics">
             <ComicSeries v-for="(comic, index) in ComicSeries" :key="index" :singleComic="comic" />
         </div>
+        <button>Load More</button>
     </section>
 </div>
 <AppBottomMain/>
@@ -114,12 +115,22 @@ div.jumbo{
 }
 div{
     background-color: $dark;
-    padding: 3rem;
+    padding: 3rem 0 1rem;
     section{
         @include container;
+        position: relative;
+        display: flex;
+        flex-direction: column;
         h1{
-        color: white;
-        margin: 0;
+            position: absolute;
+            text-transform: uppercase;
+            color: white;
+            margin: 0;
+            background-color: $blue-color;
+            display: inline;
+            padding: .5rem 1.5rem;
+            top: -4.5rem;
+            font-size: 1.5rem;
         }
         div.comics{
             display: flex;
@@ -127,6 +138,21 @@ div{
             justify-content: center;
             padding: 0;
         } 
+        button{
+            text-transform: uppercase;
+            font-size: .8rem;
+            color: white;
+            background-color: $blue-color;
+            border: none;
+            font-weight: 600;
+            padding: .5rem 3rem;
+            align-self: center;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #45a4fd;
+            }
+        }
     }
 }
 
